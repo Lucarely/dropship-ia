@@ -1,0 +1,81 @@
+/* styles/login.css — reaproveita os tokens definidos em orders-panel.css */
+
+.op-login-wrap {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper);
+  padding: 20px;
+}
+
+.op-login-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.op-login-card h1 {
+  font-size: var(--text-lg);
+  font-weight: 650;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.op-login-card > p {
+  color: var(--muted);
+  font-size: var(--text-sm);
+  margin: 0 0 18px;
+}
+
+.op-login-card label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.op-login-card input {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: var(--text-sm);
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.op-login-card input:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 1px;
+}
+
+.op-login-card input:disabled {
+  background: var(--paper);
+  color: var(--muted);
+}
+
+.op-login-error {
+  margin-top: 14px;
+  background: var(--red-wash);
+  color: var(--red);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  font-size: var(--text-xs);
+  font-weight: 550;
+}
+
+.op-login-submit {
+  margin-top: 20px;
+  width: 100%;
+  padding: 11px 14px;
+  font-size: var(--text-sm);
+}
